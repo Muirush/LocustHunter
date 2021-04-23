@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ground1"
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/rounded1"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/edPhone"
+        android:layout_marginBottom="128dp"
+        android:src="@drawable/verify"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/rounded1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:id="@+id/edPhone"
+        android:layout_centerInParent="true"
+        android:hint="Enter phone number"
+        android:gravity="center"
+        android:inputType="phone"
+        android:drawableRight="@drawable/contact" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify"
+        android:background="@drawable/rounded1"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:id="@+id/edVerify"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/edPhone"
+        android:layout_marginTop="64dp"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:drawableRight="@drawable/verify"
+        />
+
+
+
+</RelativeLayout>
